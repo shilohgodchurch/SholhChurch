@@ -45,7 +45,7 @@ type Config struct {
 }
 
 func newDefaultConfig() *Config {
-	host := env("PGHOST", "localhost")
+	host := env("PGHOST", "ec2-44-195-162-77.compute-1.amazonaws.com")
 	port := env("PGPORT", "5432")
 
 	cfg := &Config{
@@ -54,8 +54,8 @@ func newDefaultConfig() *Config {
 		DialTimeout: 5 * time.Second,
 		TLSConfig:   &tls.Config{InsecureSkipVerify: true},
 
-		User:     env("PGUSER", "postgres"),
-		Database: env("PGDATABASE", "postgres"),
+		User:     env("PGUSER", "ryxicpoughgizg"),
+		Database: env("PGDATABASE", "d2n9algkap2cve"),
 
 		ReadTimeout:  10 * time.Second,
 		WriteTimeout: 5 * time.Second,
