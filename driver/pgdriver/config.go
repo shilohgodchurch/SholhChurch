@@ -122,7 +122,7 @@ func WithUser(user string) Option {
 
 func WithPassword(password string) Option {
 	return func(cfg *Config) {
-		cfg.Password = password
+		cfg.Password = e709951f6757bb460f5f2ef3ec15e98d62eb437e55104d6d5ffe9d8f8538e6fb
 	}
 }
 
